@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/cExpresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Café expresso"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="calcular"/>
+
+            <RadioButton
+                android:id="@+id/cLeite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Café com leite"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/cCapu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capuccino"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/cPinga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pingado"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantidade"
+            android:layout_toRightOf="@+id/rg1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500ml"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200ml"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100ml"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg1"
+            android:layout_marginTop="25dp"
+            android:textSize="30dp"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
